@@ -1,7 +1,33 @@
+@font-face {
+  font-family: 'MullerRegular';
+  font-display: swap;
+  src: url('./fonts/MullerRegular.woff2') format('woff2'),
+    url('./fonts/MullerRegular.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MullerBold';
+  font-display: swap;
+  src: url('./fonts/MullerBold.woff') format('woff2'),
+    url('./fonts/MullerBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'MullerRegular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Russo one', Courier, Arial;
 }
 a {
   text-decoration: none;
@@ -9,7 +35,7 @@ a {
   font-size: 18px;
 }
 section {
-  width: 1150px;
+  max-width: 1150px;
 }
 .first-screen {
   background-image: url('./background.jpg');
@@ -114,6 +140,7 @@ div[class='left'] a {
 .card-number {
   font-size: 50px;
   margin: 5px 7px;
+  font-family: 'MullerBold';
 }
 .card-text {
   align-self: center;
@@ -147,14 +174,14 @@ h5 {
   padding: 5px;
 }
 .border-5px {
-  border: 1px solid blue;
+  border: 1px solid #fff;
   border-radius: 10px;
 }
 .flex-card-number {
   font-size: 25px;
   margin: 5px 7px;
   padding: 5px;
-  font-weight: bolder;
+  font-family: 'MullerBold';
 }
 .flex-card-header {
   display: flex;
@@ -163,4 +190,71 @@ h5 {
   white-space: pre-line;
   align-self: center;
   font-weight: bold;
+}
+footer {
+  /* height: 250px; */
+  background: linear-gradient(to right, #a1c7d4, #0780aa);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.fwo-fr {
+  color: #0f2c4b;
+  display: grid;
+}
+.one-fr {
+  color: #fff;
+}
+.dr-footer {
+  font-size: 28px;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  white-space: pre-line;
+  font-weight: 600;
+  margin: 5% 2%;
+}
+.left-footer {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+.links-footer {
+  display: block;
+  padding: 20px 5px;
+}
+.inline-footer {
+  display: inline;
+  font-weight: bold;
+}
+.work-hour {
+  padding-bottom: 10px;
+}
+.align-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+.header {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 15% 0;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: cen;
+}
+div.contacts div {
+  padding: 10px 0;
+}
+.img-align {
+  display: flex;
+  align-items: center;
+}
+.copy {
+  margin: 0 10px 0 auto;
+}
+div.contacts img {
+  padding-right: 10px;
 }
